@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*      Main        */
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.gallery-cell {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.gallery-cell img {
+    min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*      Footer      */
+footer {
+    background-color: #4B4B4B;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    height: 70px;
+}
+
+.logo {
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    font-weight: 400;
+}
+
+.nav ul li {
+    display: flex;
+    margin: 5px 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.25s;
+}
+
+.nav a:hover {
+    transform: scale(1.2);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.fa-solid {
+    color: white;
+    font-size: 2.5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+/*      Media Querys      */
+
+@media screen and (max-width: 800px) {
+    .gallery-cell img {
+        min-width: 100vw;
+        height: auto;
+    }
+}
